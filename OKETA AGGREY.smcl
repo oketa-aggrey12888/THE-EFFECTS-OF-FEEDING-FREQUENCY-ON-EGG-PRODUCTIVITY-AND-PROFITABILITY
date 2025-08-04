@@ -1,0 +1,282 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\USER\Desktop\CHICKEN.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}26 Jul 2025, 22:53:37
+
+{com}. do "C:\Users\USER\AppData\Local\Temp\STD2834_000000.tmp"
+{txt}
+{com}. sum  Ageinyears , d
+
+                        {txt}Age in years
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}       22             22
+{txt} 5%    {res}       26             23
+{txt}10%    {res}       27             24       {txt}Obs         {res}         63
+{txt}25%    {res}       32             26       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res}       40                      {txt}Mean          {res} 39.39683
+                        {txt}Largest       Std. Dev.     {res} 9.474141
+{txt}75%    {res}       48             56
+{txt}90%    {res}       52             56       {txt}Variance      {res} 89.75934
+{txt}95%    {res}       56             56       {txt}Skewness      {res} .1123421
+{txt}99%    {res}       56             56       {txt}Kurtosis      {res} 2.026157
+{txt}
+{com}. sum Yearsofexperience,d
+
+                     {txt}Years of experience
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        1              1
+{txt} 5%    {res}        2              2
+{txt}10%    {res}        2              2       {txt}Obs         {res}         63
+{txt}25%    {res}        2              2       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res}        5                      {txt}Mean          {res} 6.619048
+                        {txt}Largest       Std. Dev.     {res} 4.952772
+{txt}75%    {res}        8             16
+{txt}90%    {res}       15             20       {txt}Variance      {res} 24.52995
+{txt}95%    {res}       16             20       {txt}Skewness      {res} 1.249606
+{txt}99%    {res}       20             20       {txt}Kurtosis      {res} 3.758339
+{txt}
+{com}. sum Farm_size,d
+
+                 {txt}Size of the farm (in acres)
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}    .0344          .0344
+{txt} 5%    {res}    .0344          .0344
+{txt}10%    {res}    .1148          .0344       {txt}Obs         {res}         63
+{txt}25%    {res}        1          .0344       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res}        2                      {txt}Mean          {res} 2.928448
+                        {txt}Largest       Std. Dev.     {res}  2.59376
+{txt}75%    {res}        4              8
+{txt}90%    {res}        6             10       {txt}Variance      {res} 6.727591
+{txt}95%    {res}        8             10       {txt}Skewness      {res} 1.435823
+{txt}99%    {res}       12             12       {txt}Kurtosis      {res} 5.046556
+{txt}
+{com}. sum Numberoflayerhenscurrentlyk,d
+
+             {txt}Number of layer hens currently kept
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}       68             68
+{txt} 5%    {res}      100            100
+{txt}10%    {res}      250            100       {txt}Obs         {res}         63
+{txt}25%    {res}      500            100       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res}     2500                      {txt}Mean          {res} 9343.032
+                        {txt}Largest       Std. Dev.     {res} 15293.74
+{txt}75%    {res}    10000          35000
+{txt}90%    {res}    30000          50000       {txt}Variance      {res} 2.34e+08
+{txt}95%    {res}    35000          50000       {txt}Skewness      {res} 2.483036
+{txt}99%    {res}    80000          80000       {txt}Kurtosis      {res} 9.716451
+{txt}
+{com}. tab Gender
+
+     {txt}Gender {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+       Male {c |}{res}         24       38.10       38.10
+{txt}     Female {c |}{res}         39       61.90      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         63      100.00
+{txt}
+{com}. tab educationlevel
+
+              {txt}education level  {c |}      Freq.     Percent        Cum.
+{hline 31}{c +}{hline 35}
+           No formal education {c |}{res}          8       12.70       12.70
+{txt}                       Primary {c |}{res}          9       14.29       26.98
+{txt}                     Secondary {c |}{res}         25       39.68       66.67
+{txt}Tertiary (Diploma/Certificate) {c |}{res}         12       19.05       85.71
+{txt}             University degree {c |}{res}          9       14.29      100.00
+{txt}{hline 31}{c +}{hline 35}
+                         Total {c |}{res}         63      100.00
+{txt}
+{com}. tab poultryfarmingmainsourceof
+
+    {txt}poultry {c |}
+    farming {c |}
+main source {c |}
+ of income? {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+         No {c |}{res}          6        9.52        9.52
+{txt}        Yes {c |}{res}         57       90.48      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         63      100.00
+{txt}
+{com}. mrtab Deeplitter Batterycage Freerange Semiintensive
+
+                          {txt}  {c |}             Percent of     Percent
+                            {c |}  Frequency   responses    of cases
+{hline 27}{hline 1}{c +}{hline 11}{hline 1}{hline 11}{hline 1}{hline 11}
+  Deeplitter    Deep litter {c |}  {res}       39       54.17       65.00
+ {txt}Batterycage   Battery cage {c |}  {res}       25       34.72       41.67
+   {txt}Freerange     Free-range {c |}  {res}        8       11.11       13.33
+{txt}Semiintens~e Semi-intensive {c |}  {res}        0        0.00        0.00
+{txt}{hline 27}{hline 1}{c +}{hline 11}{hline 1}{hline 11}{hline 1}{hline 11}
+                      Total {c |}  {res}       72      100.00      120.00
+
+{txt}Valid cases:         60
+Missing cases:        3
+
+{com}. tab Doyoukeepotheranimalsbeside
+
+{txt}Do you keep {c |}
+      other {c |}
+    animals {c |}
+    besides {c |}
+   poultry? {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+         No {c |}{res}         53       84.13       84.13
+{txt}        Yes {c |}{res}         10       15.87      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}         63      100.00
+{txt}
+{com}. ****************************OBJECTIVE 1********************************************************************************************
+. ***********************************************************************************************************************************
+. /*0BJESTIVE 1:i.        To analyze the differences in egg productivity among layer chicken farmers with varying feeding frequencies in Mukono.*/
+.          
+.                                        *********OBJECTIVE 1 COMMANDS ************
+.                                        ******************************************
+.                                        ******************************************
+. /* Anova was proposed,anova assumes normality and equality of variance */
+. sum Whatistheaveragenumberofeg,d
+
+       {txt}What is the average number of eggs produced per
+                        hen per week?
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res}        5              5
+{txt} 5%    {res}        5              5
+{txt}10%    {res}        5              5       {txt}Obs         {res}         63
+{txt}25%    {res}        5              5       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res}        6                      {txt}Mean          {res} 5.587302
+                        {txt}Largest       Std. Dev.     {res} .4962739
+{txt}75%    {res}        6              6
+{txt}90%    {res}        6              6       {txt}Variance      {res} .2462878
+{txt}95%    {res}        6              6       {txt}Skewness      {res}-.3546542
+{txt}99%    {res}        6              6       {txt}Kurtosis      {res}  1.12578
+{txt}
+{com}. 
+. /*The average number of eggs per hen per week is negatively skewed hence no normality,We therefore opt for kruska wallis , non parametric version of oneway anova */
+. kwallis Whatistheaveragenumberofeg,by(Feedingfrequency)
+
+{txt}Kruskal-Wallis equality-of-populations rank test
+
+  {c TLC}{hline 34}{c TT}{hline 5}{c TT}{hline 10}{c TRC}
+  {c |} {res}                Feedingfrequency {txt}{c |} {res}Obs {txt}{c |} {res}Rank Sum {txt}{c |}
+  {c LT}{hline 34}{c +}{hline 5}{c +}{hline 10}{c RT}
+  {c |} {res}                      Once daily {txt}{c |} {res}  5 {txt}{c |} {res}  225.00 {txt}{c |}
+  {c |} {res}                     Twice daily {txt}{c |} {res} 42 {txt}{c |} {res} 1291.50 {txt}{c |}
+  {c |} {res}Ad libitum (free access to feed) {txt}{c |} {res} 16 {txt}{c |} {res}  499.50 {txt}{c |}
+  {c BLC}{hline 34}{c BT}{hline 5}{c BT}{hline 10}{c BRC}
+
+chi-squared = {res}    2.739{txt} with {res}2{txt} d.f.
+probability = {res}    0.2542
+
+{txt}chi-squared with ties = {res}    3.766{txt} with {res}2{txt} d.f.
+probability = {res}    0.1521
+{txt}
+{com}. 
+.                                ********OBJECTIVE 1 INTERPRETATION*******
+.                                                            *****************************************
+.                                                            *****************************************
+. /*Although chickens fed twice daily showed a tendency to produce more eggs on average, the Kruskal-Wallis test results
+> indicate that the differences in average egg production across feeding frequencies are not statistically significant
+> (p = 0.1521). Therefore, we cannot
+>  conclude that feeding frequency has a significant effect on the average number of eggs laid */ 
+. 
+. **************************OBJECTIVE 2*****************************************************************************************
+. ***************************************************************************************************************************
+. ****************************************************************************************************************************
+. /* OBJECTIVE 2:ii.      To estimate the profitability of egg production among layer chicken farmers based on different feeding frequencies.*/
+. 
+. /*To estimate the profitability of egg production among layer chicken farmers under different feeding frequencies, weekly production costs were calculated by dividing total monthly 
+> expenses including feed, labor, and other inputs—by 4.33, the average number of weeks in a month.
+> Weekly revenue was determined by multiplying the average selling price per tray by the number of trays sold 
+> per week.
+> Profitability per egg was then computed by subtracting weekly costs from weekly revenue, dividing by the number of trays sold, and then dividing by 30 (eggs per tray).
+> Initially, ANOVA was considered to compare profitability across feeding regimes (once daily, twice daily, andad libitum), but the profitability data was found to be negatively skewed, violating the normality assumption. 
+> Therefore, the Kruskal-Wallis test, a non-parametric alternative, was used.*/
+. 
+. 
+.                                *******COMMANDS OBJECTIVE 2****************
+.                                                            *******************************************
+.                                                            *******************************************
+. /*TOTAL COST OF PRODUCTION Monthly total costs was divided by 4.33 to get weekly costs */
+. gen TC_weekly= (MonthlycostofpoultryfeedUG + Monthlycostoflaborifany + Othermonthlycostsegvacci)/4.33
+{txt}
+{com}. 
+. /* TOTAL REVENUE */
+. gen weekly_revenue = Averagesellingpricepertrayo * Howmanytraysdoyousellperw
+{txt}
+{com}. 
+. /* PROFITABILITY PER TRAY DIVIDED BY 30 TO GET PROFITABILITY PER EGG */
+. gen Profitability_per_egg=( (weekly_revenue- TC_weekly)/ Howmanytraysdoyousellperw)/30
+{txt}
+{com}. 
+. /*COMPARING PROFITABILITY AMONG THE 3 FEEDING REGIMES USING ANOVA
+> Anova assumes NORMALITY & EQUALITY OF VARIANCE
+> Checking for normality in profitability_per_egg using the skewness*/
+. sum Profitability_per_egg,d 
+
+                    {txt}Profitability_per_egg
+{hline 61}
+      Percentiles      Smallest
+ 1%    {res} -60836.4       -60836.4
+{txt} 5%    {res}-3832.367      -45863.64
+{txt}10%    {res}-1517.967      -7715.963       {txt}Obs         {res}         63
+{txt}25%    {res} 15.04117      -3832.367       {txt}Sum of Wgt. {res}         63
+
+{txt}50%    {res} 82.02966                      {txt}Mean          {res} -1909.98
+                        {txt}Largest       Std. Dev.     {res} 9558.794
+{txt}75%    {res} 166.7088        360.209
+{txt}90%    {res} 300.2594       361.7636       {txt}Variance      {res} 9.14e+07
+{txt}95%    {res}  360.209       369.1212       {txt}Skewness      {res}-5.384985
+{txt}99%    {res}  376.762        376.762       {txt}Kurtosis      {res} 31.00034
+{txt}
+{com}. 
+. /*profitability is negatively skewed hence no normality hence we opt for kruska wallis test,
+> non parametric version of anova */
+. kwallis Profitability_per_egg ,by(Feedingfrequency)
+
+{txt}Kruskal-Wallis equality-of-populations rank test
+
+  {c TLC}{hline 34}{c TT}{hline 5}{c TT}{hline 10}{c TRC}
+  {c |} {res}                Feedingfrequency {txt}{c |} {res}Obs {txt}{c |} {res}Rank Sum {txt}{c |}
+  {c LT}{hline 34}{c +}{hline 5}{c +}{hline 10}{c RT}
+  {c |} {res}                      Once daily {txt}{c |} {res}  5 {txt}{c |} {res}  204.00 {txt}{c |}
+  {c |} {res}                     Twice daily {txt}{c |} {res} 42 {txt}{c |} {res} 1309.00 {txt}{c |}
+  {c |} {res}Ad libitum (free access to feed) {txt}{c |} {res} 16 {txt}{c |} {res}  503.00 {txt}{c |}
+  {c BLC}{hline 34}{c BT}{hline 5}{c BT}{hline 10}{c BRC}
+
+chi-squared = {res}    1.254{txt} with {res}2{txt} d.f.
+probability = {res}    0.5341
+
+{txt}chi-squared with ties = {res}    1.254{txt} with {res}2{txt} d.f.
+probability = {res}    0.5341
+{txt}
+{com}. 
+.                                ******INTERPRETATION OBJECTIVE 2*********
+.                                                            *****************************************
+.                                                            *****************************************
+. /* Although farmers who fed their chickens twice daily had the highest rank sum—suggesting relatively higher profitability,the Kruskal-Wallis test results were not statistically significant at the 95% confidence level 
+> (χ² = 3.766, df = 2, p = 0.1521). This implies that the observed differences in profitability across feeding frequencies could be due to random variation and are not statistically conclusive.*/
+. #delimit cr.
+{txt}delimiter now ;
+{com}. 
+{txt}end of do-file
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\USER\Desktop\CHICKEN.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}26 Jul 2025, 22:55:41
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
